@@ -122,3 +122,6 @@ For starters, I will only provide support for chips that have the classic power 
 
 Basically, the first version will only support 14-pin chips that have power on pins 14 and 7.
 
+I used a 28-pin ZIF socket to connect the test chip. The connection diagram to the Arduino MEGA is shown in figure 3.
+
+![ Figure 3 ](/Pictures/Figure3.png)
