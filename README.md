@@ -99,3 +99,26 @@ The maximum value of the supply current entering pin 14 is limited by resistor R
 
 R14 = (Vcc – Vce_sat_q1 - Vce_sat_q12) / Imax = (5V – 0.3 – 0.3V) / 200 mA = 4.4V / 0.2A = 22 Ohms
 
+Most 7400 and 4000 series chips have power pins:
+- 14 = Vcc and 7 = GND for 14-pin chips,
+- 16 = Vcc and 8 = GND for 16-pin chips,
+- 20 = Vcc and 10 = GND for 20-pin chips,
+- 24 = Vcc and 12 = GND for 24-pin chips.
+
+But there are exceptions to this rule, like this:
+- 7473 has 14 pins and the power pins are: 4 = Vcc and 11 = GND,
+- 7473 has 16 pins and the power pins are: 5 = Vcc and 12 = GND,
+- 7490 has 14 pins and the power pins are: 5 = Vcc and 10 = GND,
+- 7492 has 14 pins and the power pins are: 5 = Vcc and 10 = GND,
+- 7493 has 14 pins and the power pins are: 5 = Vcc and 10 = GND,
+- 74657 has 24 pins and the power pins are: 7 = Vcc and 18 = GND,
+- 4049 has 16 pins and the power pins are: 1 = Vcc and 8 = GND,
+- 4050 has 16 pins and the power pins are: are: 1 = Vcc and 8 = GND,
+- 4045 has 16 pins and the power pins are: 3 = Vcc and 14 = GND.
+
+This means that in the future, to support these chips, other transistors will need to be added in addition to Q1 and Q2.
+
+For starters, I will only provide support for chips that have the classic power supply with the ground pin in the rightmost position on the first row of pins and the +5 Volt power pin in the last pin position.
+
+Basically, the first version will only support 14-pin chips that have power on pins 14 and 7.
+
