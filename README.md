@@ -51,6 +51,8 @@ So for our application we will use 0.125W resistors
 ## Power supply of the tested integrated circuit
 Since all pins of the integrated circuit under test are connected to the microcontroller pins through current limiting resistors, it involves connecting the power pins through 220 Ohm resistors and the power pins are also connected through resistors as can be seen in Figure 1.
 
+![ Figure 1 ](/Pictures/Figure1.png)
+
 We assume the present situation where all control pins are connected to ground and only power pin 14 is connected to 5 Volts.
 
 Through the pins of the chip under test we will have a greater or lesser current flowing to ground through the limiting resistors. The current that will enter the chip through the power pin will be the sum of these currents.
@@ -71,6 +73,8 @@ The same situation can be if all pins are connected to +5V but only pin 7 is con
 
 To eliminate this non-compliant situation, I propose connecting the power pins via two transistors as in figure 2.
 
-We have eliminated resistor R 1 so pin 7 is connected directly to ground via transistor Q1.
+![ Figure 2 ](/Pictures/Figure2.png)
+
+I removed the resistor R 1 so pin 7 is connected directly to ground via transistor Q1.
 
 
