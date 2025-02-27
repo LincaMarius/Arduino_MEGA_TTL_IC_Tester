@@ -77,4 +77,25 @@ To eliminate this non-compliant situation, I propose connecting the power pins v
 
 I removed the resistor R 1 so pin 7 is connected directly to ground via transistor Q1.
 
+The maximum current that can pass through transistor Q1 is the sum of all currents entering the chip under test if the other pins are connected to =5 Volts.
+
+Theoretically this current can have a maximum value of: maximum current on one pin * maximum number of pins receiving current:
+
+40 mA * 13 = 520 mA
+
+For this collector current we must have a base current of minimum:
+
+Ib = Ic / Hfe = 520 mA / 40 = 13 mA
+
+To saturate transistor Q1 the base current must be almost double the calculated value. For a base resistance of 220 Ohms we will have a base current:
+
+Ib = (Vcc – Vbe_sat) / Rb = (5V – 1V) / 220 = 18 mA
+
+The same current values ​​are valid for transistor Q2.
+
+In case we have a defective chip or one mounted twisted in the socket we must limit the supply current. I chose the maximum value of 200 mA
+
+The maximum value of the supply current entering pin 14 is limited by resistor R14.
+
+R14 = (Vcc – Vce_sat_q1 - Vce_sat_q12) / Imax = (5V – 0.3 – 0.3V) / 200 mA = 4.4V / 0.2A = 22 Ohms
 
