@@ -137,6 +137,8 @@ The program is designed as a Finite State Machine whose state is determined by t
 
 A diagram with the 8 states in which the Finite State Machine can be is shown in figure 4.
 
+![ Figure 4 ](/Pictures/Figure4.png)
+
 The conditions for transitioning from one state to another are presented in red text.
 
 Each state performs an action that is represented by blue text.
