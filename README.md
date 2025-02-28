@@ -129,3 +129,16 @@ I used a 28-pin ZIF socket to connect the test chip. The connection diagram to t
 ## Source Code
 The current version is 0.1 and its source code can be found here:
 
+https://github.com/LincaMarius/Arduino_MEGA_TTL_IC_Tester/blob/main/Arduino/IC_Tester.ino
+
+The user interface is done through the Serial Monitor in the Arduino IDE application.
+
+The program is designed as a Finite State Machine whose state is determined by the command that the user enters from the keyboard.
+
+A diagram with the 8 states in which the Finite State Machine can be is shown in figure 4.
+
+The conditions for transitioning from one state to another are presented in red text.
+
+Each state performs an action that is represented by blue text.
+
+Each of these actions has an associated function in the program.
