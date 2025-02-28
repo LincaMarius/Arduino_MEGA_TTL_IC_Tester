@@ -125,3 +125,7 @@ Basically, the first version will only support 14-pin chips that have power on p
 I used a 28-pin ZIF socket to connect the test chip. The connection diagram to the Arduino MEGA is shown in figure 3.
 
 ![ Figure 3 ](/Pictures/Figure3.png)
+
+## Source Code
+The current version is 0.1 and its source code can be found here:
+
